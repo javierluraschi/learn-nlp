@@ -9,5 +9,5 @@ This repo attempts to complement with a few hands on code examples to assist stu
 - [Gutenberg Books in Spanish](https://www.gutenberg.org/ebooks/results/?author=&title=&subject=&lang=es&category=&locc=&filetype=rdf&submit_search=Search&pageno=1)
 
 ## Resources
-- https://web.stanford.edu/~jurafsky/slp3/
-- https://www.youtube.com/channel/UC_48v322owNVtORXuMeRmpA
+- Stanford: https://web.stanford.edu/~jurafsky/slp3/, https://www.youtube.com/channel/UC_48v322owNVtORXuMeRmpA
+- Berkeley: https://people.ischool.berkeley.edu/~dbamman/nlp21.html
