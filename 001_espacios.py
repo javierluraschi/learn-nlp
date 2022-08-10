@@ -10,7 +10,7 @@ libro_archivo = "libro.txt"
 if not exists(libro_archivo):
     urllib.request.urlretrieve(libro_url, libro_archivo)
 
-with open(libro_archivo) as f:
+with open(libro_archivo, encoding = 'utf-8') as f:
     libro = f.read()
     
 len(libro.split())
