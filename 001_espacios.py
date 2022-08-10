@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import urllib.request
 from os.path import exists
 
@@ -13,4 +11,4 @@ if not exists(libro_archivo):
 with open(libro_archivo, encoding = 'utf-8') as f:
     libro = f.read()
     
-len(libro.split())
+print(len(libro.split()))
