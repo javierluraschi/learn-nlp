@@ -9,20 +9,5 @@ if not exists(book_file):
 
 with open(book_file, encoding = 'utf-8') as f:
     book = f.read()
-
-stop_words = ".,:-¿?¡!;/$"
-# abc...z
-
-words = []
-current = ''
-
-for char in book:
-    if char >= 'a' and char <= 'z':
-        current = current + char
-    else:
-        if len(current) > 0:
-            words.append(current)
-        current = ''
-   
-
-print(words)
+    
+print(len(book.split()))

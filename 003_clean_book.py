@@ -1,5 +1,6 @@
 import urllib.request
 from os.path import exists
+import re
 
 book_url = "https://www.gutenberg.org/cache/epub/54430/pg54430.txt"
 book_file = "book.txt"
@@ -9,20 +10,7 @@ if not exists(book_file):
 
 with open(book_file, encoding = 'utf-8') as f:
     book = f.read()
+    
+book = re.sub('.*START OF THIS PROJECT.*[*]+', '', book, re.DOTALL)
 
-stop_words = ".,:-¿?¡!;/$"
-# abc...z
-
-words = []
-current = ''
-
-for char in book:
-    if char >= 'a' and char <= 'z':
-        current = current + char
-    else:
-        if len(current) > 0:
-            words.append(current)
-        current = ''
-   
-
-print(words)
+print(book[0:200])

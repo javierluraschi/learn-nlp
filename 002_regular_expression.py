@@ -1,12 +1,11 @@
 import re
 
-str = '123123adsfbdsf bc aaaaaaaaaaaaaaabc5 xbc fbc sdsff 3sdfsdf'
+str = 'user@domain.com'
 
 # extract user from email
+pattern = '[a-z]+@[a-z]+\.[a-z]+'
+print(re.findall(pattern, str))
 
-# print(re.sub('abc', '', str))
-# print(re.search('abc', str))
-
-print(re.findall('[af]+bc.', str))
-
-# jluraschi
+# we cal also search and replace with regular expressions
+print(re.search(pattern, str))
+print(re.sub(pattern, '', str))
